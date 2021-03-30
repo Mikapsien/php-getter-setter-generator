@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+$deep-blue: #0a2472;
+$light-blue: #4f5b93;
+* {
+	font-family: "Orbitron", sans-serif;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+a,
+button {
+	cursor: pointer;
+}
+.header {
+	padding: 0 15% 0 15%;
+	height: 10%;
+	width: 100%;
+	background-color: $deep-blue;
+	.logo {
+		height: 100%;
+		width: auto;
+		padding: 0.5%;
+	}
+}
+.wrapper {
+	padding: 0 15% 0 15%;
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	.description-text {
+		color: $light-blue;
+		height: 15%;
+	}
+	.generator-section {
+		display: flex;
+		padding: 1% 0 1% 0;
+		height: 85%;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+
+		.left {
+			color: $deep-blue;
+			height: 100%;
+			width: 40%;
+			.head-text {
+				height: 5%;
+			}
+			.input {
+				border: $deep-blue solid 1px;
+				height: 95%;
+				border-radius: 5px;
+				.actions {
+					display: flex;
+					justify-content: flex-end;
+					height: 5%;
+					background-color: $deep-blue;
+				}
+
+				#class-input {
+					width: 100%;
+					height: 90%;
+					outline: none;
+					border: none;
+					max-height: 90%;
+					max-width: 100%;
+				}
+			}
+		}
+		.middle {
+			width: 20%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			#generate-button {
+				background-color: $deep-blue;
+				color: white;
+				border: none;
+				padding: 2%;
+				border-radius: 0.5vh;
+			}
+		}
+		.right {
+			color: $deep-blue;
+			height: 100%;
+			width: 40%;
+			.head-text {
+				height: 5%;
+			}
+			.output {
+				border: $deep-blue solid 1px;
+				height: 95%;
+				border-radius: 5px;
+				.actions {
+					display: flex;
+					justify-content: flex-end;
+					height: 5%;
+					background-color: $deep-blue;
+					img {
+						height: 100%;
+						width: auto;
+						padding: 0.5%;
+						cursor: pointer;
+					}
+				}
+
+				.output-text {
+					width: 100%;
+					height: 90%;
+					outline: none;
+					border: none;
+					max-height: 90%;
+					max-width: 100%;
+                    overflow: scroll auto;
+				}
+			}
+		}
+	}
+}

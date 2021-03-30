@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  font-family: "Orbitron", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.header {
+  padding: 0 15% 0 15%;
+  height: 10%;
+  width: 100%;
+  background-color: #0a2472;
+}
+
+.header .logo {
+  height: 100%;
+  width: auto;
+  padding: 0.5%;
+}
+
+.wrapper {
+  padding: 0 15% 0 15%;
+  height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .description-text {
+  color: #4f5b93;
+  height: 15%;
+}
+
+.wrapper .generator-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 0 1% 0;
+  height: 85%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .generator-section .left {
+  color: #0a2472;
+  height: 100%;
+  width: 40%;
+}
+
+.wrapper .generator-section .left .head-text {
+  height: 5%;
+}
+
+.wrapper .generator-section .left .input {
+  border: #0a2472 solid 1px;
+  height: 95%;
+  border-radius: 5px;
+}
+
+.wrapper .generator-section .left .input .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 5%;
+  background-color: #0a2472;
+}
+
+.wrapper .generator-section .left .input #class-input {
+  width: 100%;
+  height: 90%;
+  outline: none;
+  border: none;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+.wrapper .generator-section .middle {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .generator-section .middle #generate-button {
+  background-color: #0a2472;
+  color: white;
+  border: none;
+  padding: 2%;
+  border-radius: 0.5vh;
+}
+
+.wrapper .generator-section .right {
+  color: #0a2472;
+  height: 100%;
+  width: 40%;
+}
+
+.wrapper .generator-section .right .head-text {
+  height: 5%;
+}
+
+.wrapper .generator-section .right .output {
+  border: #0a2472 solid 1px;
+  height: 95%;
+  border-radius: 5px;
+}
+
+.wrapper .generator-section .right .output .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 5%;
+  background-color: #0a2472;
+}
+
+.wrapper .generator-section .right .output .actions img {
+  height: 100%;
+  width: auto;
+  padding: 0.5%;
+  cursor: pointer;
+}
+
+.wrapper .generator-section .right .output .output-text {
+  width: 100%;
+  height: 90%;
+  outline: none;
+  border: none;
+  max-height: 90%;
+  max-width: 100%;
+  overflow: scroll auto;
+}
+/*# sourceMappingURL=main.css.map */
