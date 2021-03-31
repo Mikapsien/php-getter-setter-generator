@@ -5,20 +5,7 @@ const copyButton = document.getElementById("copy");
 
 var classText;
 generateButton.addEventListener("click", (e) => {
-	inputClass.value = `class Session {
-	    private $id;
-	    private $safSessionId;
-	    private $msisdn;
-	    private $serviceCode;
-	    private $ussdString_6;
-	    private $userType_7_;
-	    private $status;
-	    private $additionalData;
-	    private $createdOn;
-	    private $createdBy;
-	    private $lastUpdatedOn;
-	    private $lastUpdatedBy;
-	}`;
+
 	classText = inputClass.value;
 	getterSetter = generate(classText);
 	outputText.value = getterSetter;
@@ -75,7 +62,7 @@ function generate(classText) {
 			`;
     }`;
 
-		console.log(camelCaseName);
+		
 
 		result += setter + "\n" + getter + "\n";
 	}
