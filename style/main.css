@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap");
 * {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -147,6 +147,20 @@ button {
           justify-content: flex-end;
   height: 5%;
   background-color: #0a2472;
+}
+
+.wrapper .generator-section .right .output .actions .copy-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: yellowgreen;
+  padding: 1%;
+}
+
+.wrapper .generator-section .right .output .actions .copy-status-hidden {
+  display: none;
+  color: yellowgreen;
+  padding: 1%;
 }
 
 .wrapper .generator-section .right .output .actions img {

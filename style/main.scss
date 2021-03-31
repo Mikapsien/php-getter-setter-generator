@@ -6,7 +6,7 @@ $deep-blue: #0a2472;
 $light-blue: #4f5b93;
 * {
 	//font-family: "Orbitron", sans-serif;
-    font-family: 'Noto Serif JP', serif;
+	font-family: "Noto Serif JP", serif;
 	box-sizing: border-box;
 }
 body {
@@ -106,6 +106,16 @@ button {
 					justify-content: flex-end;
 					height: 5%;
 					background-color: $deep-blue;
+					.copy-status {
+						display: flex;
+						color: yellowgreen;
+						padding: 1%;
+					}
+					.copy-status-hidden {
+						display: none;
+						color: yellowgreen;
+						padding: 1%;
+					}
 					img {
 						height: 100%;
 						width: auto;

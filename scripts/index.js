@@ -2,15 +2,20 @@ const generateButton = document.getElementById("generate-button");
 const inputClass = document.getElementById("class-input");
 const outputText = document.getElementById("output-text");
 const copyButton = document.getElementById("copy");
+const copyStatus = document.querySelector("#copy-status");
 
 var classText;
 generateButton.addEventListener("click", (e) => {
-
+	copyStatus.setAttribute("class", "copy-status-hidden");
 	classText = inputClass.value;
 	getterSetter = generate(classText);
 	outputText.value = getterSetter;
 });
 
+inputClass.addEventListener("keyup", (e) => {
+	outputText.value = "";
+	copyStatus.setAttribute("class", "copy-status-hidden");
+});
 function generate(classText) {
 	var result = "";
 	var properties = classText.match(
@@ -62,14 +67,14 @@ function generate(classText) {
 			`;
     }`;
 
-		
-
 		result += setter + "\n" + getter + "\n";
 	}
 	return result;
 }
 
-copyButton.addEventListener("click", (e) => {
-    document.querySelector("#output-text").select();
-	document.execCommand("copy");
-});
+copyButton.addEventListener("click", clipboardCopy);
+async function clipboardCopy() {
+	await navigator.clipboard.writeText(outputText.value);
+
+	copyStatus.setAttribute("class", "copy-status");
+}
